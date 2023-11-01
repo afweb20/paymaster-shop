@@ -1,0 +1,60 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.slide-dark {
+  background-color: #1f1f47;
+}
+
+.slide-pink {
+  background-color: #f72585;
+}
+
+.slide-green {
+  background-color: #52b788;
+}
+
+.shoe-img {
+  max-height: 100%;
+  transform: rotate(-30deg) scale(1.3);
+}
+
+.buy-form {
+  background-color: rgba(255, 255, 255, 0.4);
+
+  backdrop-filter: blur(8px);
+}
+
+.shoe-wrap {
+  display: flex;
+  height: 50%;
+
+  justify-content: center;
+  @media (min-width: 992px) {
+    height: 100%;
+  }
+}
