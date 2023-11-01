@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
     entry: "./src/projectName.js",
     output: {
       filename: env === "development" ? "[name].js" : "[name].[fullhash].js",
-      path: path.resolve(__dirname, "project-name"),
+      path: path.resolve(__dirname, "dist"),
       chunkFilename: "[name].[fullhash].js",
       clean: true
     },
