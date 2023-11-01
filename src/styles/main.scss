@@ -27,20 +27,19 @@ svg {
 }
 
 .slide-dark {
-  background-color: #1f1f47;
+  background-color: #7DCFB6;
 }
 
 .slide-pink {
-  background-color: #f72585;
+  background-color: #480ca8;
 }
 
 .slide-green {
-  background-color: #52b788;
+  background-color: #FFD97D;
 }
 
 .shoe-img {
   max-height: 100%;
-  // transform: rotate(-30deg) scale(1.3);
 }
 
 .buy-form {
@@ -51,7 +50,8 @@ svg {
 
 .shoe-wrap {
   display: flex;
-  height: 50%;
+  align-items: center;
+  height: 45%;
 
   justify-content: center;
   @media (min-width: 992px) {
@@ -69,7 +69,7 @@ svg {
   height: auto;
   cursor: pointer;
   opacity: 0.4;
-  color: #ffffff;
+  color: #000;
   background-color: transparent;
   &.swiper-pagination-bullet-active {
     font-size: 24px;
