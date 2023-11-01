@@ -9,16 +9,19 @@ import "./styles/main.scss";
 
 const swiper = new Swiper(".swiper", {
   direction: "vertical",
-  keyboard: {
-    enabled: true,
-  },
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    renderBullet: function (index, className) {
+      return "<span class=\"" + className + "\">" + (index + 1) + "</span>";
+    },
   },
   modules: [Navigation, Pagination],
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 });
