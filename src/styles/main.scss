@@ -27,15 +27,15 @@ svg {
 }
 
 .slide-dark {
-  background-color: #7DCFB6;
+  background-color: #7dcfb6;
 }
 
 .slide-pink {
-  background-color: #480ca8;
+  background-color: #272640;
 }
 
 .slide-green {
-  background-color: #FFD97D;
+  background-color: #ffd97d;
 }
 
 .shoe-img {
@@ -51,11 +51,15 @@ svg {
 .shoe-wrap {
   display: flex;
   align-items: center;
-  height: 45%;
+  height: 35%;
+  margin-top: 40px;
+  margin-bottom: -40px;
 
   justify-content: center;
   @media (min-width: 992px) {
     height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -63,18 +67,46 @@ svg {
   margin-right: 16px;
 }
 
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  display: flex;
+  margin: 16px 0;
+}
+
 .swiper-pagination-bullet {
   font-size: 22px;
-  width: auto;
-  height: auto;
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 56px;
   cursor: pointer;
-  opacity: 0.4;
-  color: #000;
-  background-color: transparent;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  justify-content: center;
+  backdrop-filter: blur(8px);
   &.swiper-pagination-bullet-active {
     font-size: 24px;
     font-weight: bold;
     cursor: default;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 1);
   }
+}
+
+.navbar-logo {
+  height: 56px;
+}
+
+.navbar-icon {
+  width: 24px;
+}
+
+.fw-bolder {
+  font-weight: 900 !important;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
 }
